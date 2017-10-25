@@ -32,18 +32,32 @@ main {
   text-align: center;
   padding: 2px;
 }
+section {
+  font-size: 1em;
+  background: #888;
+  margin: 1em 1% 1em 1%;
+  }
 
 section:hover {
-  background: #666;
+  background: #F8E0E6;
 }
+
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 	
-	body{
-		background: #0f0;
+body{
+		background: #f00;
 	}
+section {
+  display: inline-block;
+  width: 44%;
+ 
+}
+
+	
+	
   /* 
     - applies to screens larger than 499px (unless specifically overwritten these styles will also apply to screens larger than 999px)
     - add any hover states here
@@ -54,11 +68,22 @@ section:hover {
   */
 }
 /* END FIRST BREAKPOINT */
-
-
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
+
 @media screen and (min-width: 1000px) {
-  /*
+ body{
+		background: #0f0;
+	}
+section {
+  display: inline-block;
+  width: 22%;
+ 
+}
+
+
+
+
+ /*
     - applies to screens larger than 999px only
     - add a max-width to your main section
     - further decrease size of sections
